@@ -2,7 +2,7 @@
 using System.Net.Http;
 using Structural.Decorator.Component;
 
-namespace Structural.Decorator.ConcreteComponent
+namespace Structural.Composition.Loggers
 {
     public class HttpLogger : ILogger
     {

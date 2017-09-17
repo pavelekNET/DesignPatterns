@@ -1,7 +1,7 @@
 ﻿using System;
 using Structural.Decorator.Component;
 
-namespace Structural.Decorator.ConcreteComponent
+namespace Structural.Composition.Loggers
 {
     public class ConsoleLogger : ILogger
     {

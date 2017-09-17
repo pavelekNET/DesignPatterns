@@ -7,7 +7,7 @@ namespace Structural.Decorator
     {
         public static void Main()
         {
-            var logger = new FileLogger("c://filepath");
+            var logger = new OutputLogger();
             var warningLogger = new WarningLogger(logger);
             var errorLogger = new ErrorLogger(new UpperCaseLoggerDecorator(logger));
 
