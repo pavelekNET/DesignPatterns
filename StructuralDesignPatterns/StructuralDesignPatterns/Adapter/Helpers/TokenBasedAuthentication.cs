@@ -11,7 +11,7 @@ namespace StructuralDesignPatterns.Adapter.Helpers
 
         public Guid GetUserToken(string userName)
         {
-            return Guid.NewGuid()`
+            return Guid.NewGuid();
         }
 
         public string GetUserName(Guid userToken)
