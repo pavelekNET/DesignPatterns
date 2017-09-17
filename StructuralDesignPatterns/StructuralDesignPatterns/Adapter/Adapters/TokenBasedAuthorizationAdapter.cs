@@ -1,5 +1,5 @@
 ﻿using System;
-using StructuralDesignPatterns.Adaptees.Adapter;
+using StructuralDesignPatterns.Adapter.Adaptees;
 using StructuralDesignPatterns.Adapter.Helpers;
 
 namespace StructuralDesignPatterns.Adapter.Adapters

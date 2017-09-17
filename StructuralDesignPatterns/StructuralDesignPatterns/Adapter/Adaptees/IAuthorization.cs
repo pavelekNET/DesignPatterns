@@ -1,4 +1,4 @@
-﻿namespace StructuralDesignPatterns.Adaptees.Adapter
+﻿namespace StructuralDesignPatterns.Adapter.Adaptees
 {
     public interface IAuthorization
     {
