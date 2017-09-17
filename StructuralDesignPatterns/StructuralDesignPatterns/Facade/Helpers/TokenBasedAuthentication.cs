@@ -2,7 +2,7 @@
 
 namespace StructuralDesignPatterns.Facade.Helpers
 {
-    public class TokenBasedAuthorization
+    public class TokenBasedAuthentication
     {
         public Guid GetUserToken(string userName)
         {

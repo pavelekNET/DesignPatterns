@@ -6,12 +6,12 @@ namespace StructuralDesignPatterns.Facade
     public class AuthorizationManager : IAuthorization
     {
         private readonly ElineWcfClient _elineWcfClient;
-        private readonly TokenBasedAuthorization _auth;
+        private readonly TokenBasedAuthentication _auth;
 
         public AuthorizationManager()
         {
             _elineWcfClient = new ElineWcfClient();
-            _auth = new TokenBasedAuthorization();
+            _auth = new TokenBasedAuthentication();
         }
 
         public Guid Authorize(string userName, string password)
