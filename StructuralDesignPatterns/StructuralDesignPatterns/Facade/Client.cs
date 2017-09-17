@@ -1,4 +1,4 @@
-﻿namespace StructuralDesignPatterns.Facade
+﻿namespace Structural.Facade
 {
     public class Client
     {

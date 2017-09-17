@@ -1,7 +1,7 @@
 ﻿using System;
-using StructuralDesignPatterns.Facade.Helpers;
+using Structural.Facade.Helpers;
 
-namespace StructuralDesignPatterns.Facade
+namespace Structural.Facade
 {
     public class AuthorizationManager : IAuthorization
     {

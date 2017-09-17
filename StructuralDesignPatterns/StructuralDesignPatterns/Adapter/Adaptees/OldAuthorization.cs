@@ -1,4 +1,4 @@
-﻿namespace StructuralDesignPatterns.Adapter.Adaptees
+﻿namespace Structural.Adapter.Adaptees
 {
     public class OldAuthorization : IAuthorization
     {

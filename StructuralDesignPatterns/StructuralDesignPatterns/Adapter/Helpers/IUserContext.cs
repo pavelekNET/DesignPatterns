@@ -1,4 +1,4 @@
-﻿namespace StructuralDesignPatterns.Adapter.Helpers
+﻿namespace Structural.Adapter.Helpers
 {
     public  interface IUserContext
     {

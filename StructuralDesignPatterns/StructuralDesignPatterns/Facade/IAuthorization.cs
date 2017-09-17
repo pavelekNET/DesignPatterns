@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StructuralDesignPatterns.Facade
+namespace Structural.Facade
 {
     public interface IAuthorization
     {

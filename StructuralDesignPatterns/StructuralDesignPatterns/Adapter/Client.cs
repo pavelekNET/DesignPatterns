@@ -1,7 +1,7 @@
-﻿using StructuralDesignPatterns.Adapter.Adaptees;
-using StructuralDesignPatterns.Adapter.Adapters;
+﻿using Structural.Adapter.Adaptees;
+using Structural.Adapter.Adapters;
 
-namespace StructuralDesignPatterns.Adapter
+namespace Structural.Adapter
 {
     public class Client
     {

@@ -1,8 +1,8 @@
 ﻿using System;
-using StructuralDesignPatterns.Adapter.Adaptees;
-using StructuralDesignPatterns.Adapter.Helpers;
+using Structural.Adapter.Adaptees;
+using Structural.Adapter.Helpers;
 
-namespace StructuralDesignPatterns.Adapter.Adapters
+namespace Structural.Adapter.Adapters
 {
     public class TokenBasedAuthorizationAdapter : IAuthorization
     {
@@ -11,6 +11,7 @@ namespace StructuralDesignPatterns.Adapter.Adapters
 
         public TokenBasedAuthorizationAdapter()
         {
+            _userContext = (IUserContext)new object();
             _auth = new TokenBasedAuthentication();
         }
 

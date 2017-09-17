@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StructuralDesignPatterns.Facade.Helpers
+namespace Structural.Facade.Helpers
 {
     public class TokenBasedAuthentication
     {

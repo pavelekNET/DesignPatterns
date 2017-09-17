@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StructuralDesignPatterns.Adapter.Helpers
+namespace Structural.Adapter.Helpers
 {
     public class TokenBasedAuthentication
     {
