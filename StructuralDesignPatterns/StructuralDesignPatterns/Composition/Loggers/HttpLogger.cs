@@ -7,6 +7,14 @@ namespace Structural.Composition.Loggers
     public class HttpLogger : ILogger
     {
         private readonly Uri _logUrl;
+        private int _messageBuffer;
+        private const int MessageBufferMultiplier = 1;
+
+        public int MessageBuffer
+        {
+            get => _messageBuffer;
+            set => _messageBuffer = value * MessageBufferMultiplier;
+        }
 
         public HttpLogger(Uri logUrl)
         {

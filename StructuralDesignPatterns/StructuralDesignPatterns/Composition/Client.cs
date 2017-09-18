@@ -11,7 +11,11 @@ namespace Structural.Composition
             var httpLogger = new HttpLogger(new Uri("www.idnes.cz/logs"));
             var outputLogger = new OutputLogger();
 
-            var multiLogger = new CompositeLogger(fileLogger, httpLogger, outputLogger);
+            var multiLogger = new CompositeLogger(fileLogger, httpLogger, outputLogger)
+            {
+                MessageBuffer = 50
+            };
+
             multiLogger.Log("LOG FOR MULTIPLE LOGGERS");
         }
     }
