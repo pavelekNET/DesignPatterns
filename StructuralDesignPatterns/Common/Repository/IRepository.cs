@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Common.Repository
+﻿namespace Common.Repository
 {
     public interface IRepository<TModel> : IReadonlyRepository<TModel>
     {
