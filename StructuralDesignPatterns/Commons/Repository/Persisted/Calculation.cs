@@ -1,8 +1,6 @@
-﻿using Commons.Repository.Models;
-
-namespace Commons.Repository.Persisted
+﻿namespace Commons.Repository.Persisted
 {
-    public class Calculation
+    public class Calculation : PersistentObject
     {
         public string Label { get; set; }
 

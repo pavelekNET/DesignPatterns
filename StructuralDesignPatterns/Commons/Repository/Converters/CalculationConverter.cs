@@ -1,22 +1,42 @@
-﻿using Commons.Repository.Persisted;
-
-namespace Commons.Repository.Converters
+﻿namespace Commons.Repository.Converters
 {
     public class CalculationConverter : IModelConverter<Models.Calculation, Persisted.Calculation>
     {
-        public Calculation ToPersisted(Models.Calculation obj)
+        private readonly IModelConverter<Models.FinancialProduct, Persisted.FinancialProduct> _financialProductConverter;
+
+        public CalculationConverter(IModelConverter<Models.FinancialProduct, Persisted.FinancialProduct> financialProductConverter)
         {
-            throw new System.NotImplementedException();
+            _financialProductConverter = financialProductConverter;
         }
 
-        public Models.Calculation ToModel(Calculation obj)
+        public Persisted.Calculation ToPersisted(Models.Calculation obj)
         {
-            throw new System.NotImplementedException();
+            var persisted = new Persisted.Calculation()
+            {
+                Label = obj.Label,
+                FinancialProduct = _financialProductConverter.ToPersisted(obj.FinancialProduct)
+            };
+
+            return persisted;
         }
 
-        public void CopyChanges(Models.Calculation pairKey, Calculation pairValue)
+        public Models.Calculation ToModel(Persisted.Calculation obj)
         {
-            throw new System.NotImplementedException();
+            var model = new Models.Calculation(
+                obj.Label,
+                _financialProductConverter.ToModel(obj.FinancialProduct
+                ));
+
+            return model;
+        }
+
+        public void CopyChanges(Models.Calculation from, Persisted.Calculation to)
+        {
+            // primitive types
+            to.Label = from.Label;
+
+            // complex types
+            _financialProductConverter.CopyChanges(from.FinancialProduct, to.FinancialProduct);
         }
     }
 }
