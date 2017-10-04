@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural", "StructuralDesignPatterns\Structural.csproj", "{D7C886A9-9A07-49BE-9787-51B2B13E1588}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structural", "Structural\Structural.csproj", "{D7C886A9-9A07-49BE-9787-51B2B13E1588}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational", "CreationalDesignPatterns\Creational.csproj", "{59B1D6DC-5082-489B-91F4-9D308B3928BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational", "Creational\Creational.csproj", "{59B1D6DC-5082-489B-91F4-9D308B3928BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commons", "Commons\Commons.csproj", "{5F7DFDA6-43AA-4EC8-A338-EFD482A20DB8}"
 EndProject
